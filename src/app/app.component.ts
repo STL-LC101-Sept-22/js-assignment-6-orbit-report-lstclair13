@@ -27,6 +27,7 @@ export class AppComponent {
 					let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
 					// add the new Satellite object to sourceList 
 					this.sourceList.push(satellite);
+					console.log(satellite)
 				 }
 
 				 // make a copy of the sourceList to be shown to the user
@@ -34,7 +35,7 @@ export class AppComponent {
 	  
 			}.bind(this));
 		}.bind(this));
-
+		
 	}
 
 	search(searchTerm: string): void {
